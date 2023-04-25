@@ -1,0 +1,231 @@
+body{
+    background-color: #fcfcfcff;
+    width :  1020px;
+}
+
+.linklocation {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    width : 1020px;
+}
+
+.linklocation > div {
+    background-color : #ccccccff;
+    width : 100px;
+    margin : 10px;
+    text-align : center;
+    line-height : 25px;
+    font-size : 20px;
+}
+
+.contents{
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction: column;
+    width : 980px;
+    margin-left : 20px;
+}
+
+.contents > .maincontents{
+    display : flex;
+    flex-direction: row;
+    width : 960px;
+}
+
+.contents > .maincontents > .contentsinfo{
+    display : flex;
+    flex-direction: column;
+    width : 320px;
+    margin : 7px;
+    padding : 3px;
+    border-style : solid;
+    border-width : 1.8px;
+    border-radius : 10px;
+    border-color : grey;
+}
+
+.contents > .maincontents > .contentsinfo > div{
+    margin : 5px;
+    padding : 2px;
+    border-style : solid;
+    border-width : 0.8px;
+    border-radius : 4px;
+    border-color : grey;
+}
+
+.contents > .subcontents {
+    display : flex;
+    flex-direction : row;
+    width : 960px;
+}
+
+.contents > .subcontents > p{
+    column-count : 2;
+    column-gap : 20px;
+    column-rule : 1px solid grey;
+}
+
+.contents > .maincontents > .contentsinfo > div > .movimg {
+    position: relative;
+}
+
+.contents > .maincontents > .contentsinfo > div > .movimg > img{
+    transition : width 2s, height 2s;
+}
+
+.contents > .maincontents > .contentsinfo > div > .movimg > img:hover{
+    width : 350px;
+    height : 350px;
+}
+
+.contents > .maincontents > .contentsinfo > div > .movimg > h3 {
+    display : none;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    text-align: center;
+    transform : translate(-50%, -50%);
+    transition : width 2s, height 2s;
+}
+
+.contents > .maincontents > .contentsinfo > div > .movimg > img:hover + h3 {
+    display : block;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    animation : movinghead;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes movinghead {
+    0% {margin-left : 1020px;}
+    25% {margin-left : 765px;}
+    50% {margin-left : 510px;}
+    75% {margin-left : 255px;}
+    100% {margin-left : 0px;}
+}
+
+hr{
+    border : solid;
+    border-width: 1.2px;
+    background-color: #555555ff;
+    border-color : #444444ff;
+}
+
+.sub{
+    width : 7em;
+    height : 2em;
+    margin-left : 0.8em;
+    margin-right : 0.8em;
+    text-align : center;
+    color : #ffffffff;
+    background-color : #333333ff;
+    font-size : 0.95em;
+}
+
+.res{
+    width : 7em;
+    height : 2em;
+    margin-left : 0.8em;
+    margin-right : 0.8em;
+    text-align : center;
+    color : #ffffffff;
+    background-color : #333333ff;
+    font-size : 0.95em;
+}
+
+@media (max-width : 800px){
+    .linklocation {
+        display : flex;
+        flex-direction: column;
+        flex-wrap : wrap;
+        width : 800px;
+        align-items: center;
+    }
+    
+    .linklocation > div {
+        background-color : #ccccccff;
+        width : 100px;
+        margin : 10px;
+        text-align : center;
+        line-height : 25px;
+        font-size : 20px;
+    }
+
+    .contents{
+        display : flex;
+        flex-wrap : wrap;
+        flex-direction: column;
+        width : 780px;
+        margin-left : 10px;
+    }
+    
+    .contents > .maincontents{
+        display : flex;
+        flex-direction: row;
+        flex-wrap : wrap;
+        width : 760px;
+    }
+
+    .contents > .subcontents {
+        display : flex;
+        flex-direction : row;
+        width : 780px;
+    }
+
+    .contents > .subcontents > p{
+        column-count : 1;
+    }
+
+}
+
+@media (max-width : 400px) {
+    .linklocation {
+        display : flex;
+        flex-direction: column;
+        flex-wrap : wrap;
+        width : 400px;
+        align-items: center;
+    }
+    
+    .linklocation > div {
+        background-color : #ccccccff;
+        width : 100px;
+        margin : 10px;
+        text-align : center;
+        line-height : 25px;
+        font-size : 20px;
+    }
+
+    .contents{
+        display : flex;
+        flex-wrap : wrap;
+        flex-direction: column;
+        width : 390px;
+        margin-left : 5px;
+    }
+    
+    .contents > .maincontents{
+        display : flex;
+        flex-direction: column;
+        width : 380px;
+    }
+
+    .contents > .subcontents {
+        display : flex;
+        flex-direction : row;
+        width : 390px;
+    }
+
+    .contents > .subcontents > p{
+        column-count : 1;
+    }
+}
