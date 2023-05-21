@@ -1,0 +1,116 @@
+[
+    {
+        "name" : "Green Grape Candy",
+        "price" : "2800",
+        "image" : "cpd.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Haribo",
+        "price" : "2500",
+        "image" : "hari.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Large Lolipop",
+        "price" : "3500",
+        "image" : "ll.jpg",
+        "type" : "single"
+    },
+    {
+        "name" : "Stick Candy Combination",
+        "price" : "8000",
+        "image" : "sc.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "single Chupachups",
+        "price" : "500",
+        "image" : "scc.jpg",
+        "type" : "single"
+    },
+    {
+        "name" : "Chupachups bundle",
+        "price" : "5000",
+        "image" : "cb.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "Marshmello",
+        "price" : "2500",
+        "image" : "mm.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "Santa Candy",
+        "price" : "600",
+        "image" : "san.jpg",
+        "type" : "single"
+    },
+    {
+        "name" : "Fruit Flavor Candy bundle",
+        "price" : "3000",
+        "image" : "ffc.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "Bakha Candy",
+        "price" : "2000",
+        "image" : "bc.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Ice Cream Candy",
+        "price" : "3300",
+        "image" : "icc.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Chocolate Candy",
+        "price" : "2400",
+        "image" : "cc.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "Animal Candy",
+        "price" : "2000",
+        "image" : "ac.jpg",
+        "type" : "bundle"
+    },
+    {
+        "name" : "Star Candy",
+        "price" : "3500",
+        "image" : "stc.jpg",
+        "type" : "bundle candy"
+    },
+    {
+        "name" : "Harry Potter JellyBean",
+        "price" : "6000",
+        "image" : "hpj.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "KitKat",
+        "price" : "3200",
+        "image" : "kk.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Scorpion Candy",
+        "price" : "1200",
+        "image" : "scor.jpg",
+        "type" : "single"
+    },
+    {
+        "name" : "Chueokui JJONDEUGI",
+        "price" : "2000",
+        "image" : "jjondeugi.jpg",
+        "type" : "products"
+    },
+    {
+        "name" : "Dalgona BBobki",
+        "price" : "2000",
+        "image" : "dalgona.jpg",
+        "type" : "products"
+    }
+]
