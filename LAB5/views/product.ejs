@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "../main.css">
+        <title>제품</title>
+    </head>
+    <body>
+        <header>
+        <H1> CornerCandy# </H1>
+        <div class = "linklocation">
+            <div><a href = "/"><strong>CANDY</strong></a></div>
+            <div><a href = "login"><strong>로그인</strong></a></div>
+            <div><a href = "signup"><strong>회원가입</strong></a></div>  
+        </div>
+        </header>
+        <main id = "pmain">
+            <div id = "pimage"><image src = <%= "../" + prod.product_image %>></image></div>
+            <div id = "pinfo">
+                <div><p>ID : <%= prod.product_id %></p></div>
+                <div><p>카테고리 : <%= prod.product_category %></p></div>
+                <div><p>사진 : <%= prod.product_image %></p></div>
+                <div><p>제목 : <%= prod.product_title %></p></div>
+                <div><p>가격 : <%= prod.product_price %></p></div>
+            </div>
+            <div id = "pfeedback">
+                <span>
+                    <form method = "post" action = <%= "/product/:" + prod.product_id %>>
+                        <label for = "fdb"><p>후기 입력 : </p></label>
+                        <input id = "fdb" name = "fdbadd" type = "text" placeholder="맛있어요!">
+                        <button type = "submit" style = "width : 20%">제출</button>
+                    </form>
+                </span>
+                <div id = "pftitle"><p>후기</p></div>
+                <% for(let i = 0; i < comt.comment.length; i++) { %>
+                    <div><%= comt.comment[i] %></div>
+                <% } %>
+            </div>
+        </main>
+    <footer>
+        <h1>빨간맛 궁금해 HONEY<br>ConerCandy Shop 찾아봐 BABY</h1>
+    </footer>
+    </body>
+</html> 

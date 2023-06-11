@@ -1,0 +1,192 @@
+body{
+    background-color: #ffffff;
+    width :  1020px;
+    margin-left : 17.5%;
+}
+
+p{
+    color : #222222;
+}
+
+header {
+    text-align: center;
+    padding-top : 20px;
+    background-color: #73a9ad;
+}
+
+footer {
+    text-align: center;
+    padding-top : 20px;
+    padding-bottom : 50px;
+    margin-top : 10px;
+    background-color: #73a9ad;
+}
+
+.linklocation {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    width : 1020px;
+}
+
+.linklocation > div {
+    background-color : #abcbcd;
+    width : 100px;
+    margin : 10px;
+    text-align : center;
+    line-height : 25px;
+    font-size : 20px;
+}
+
+button {
+    border : solid;
+    background : #d6f6f7;
+    border-color: #c8f3f5;
+    border-radius : 2px;
+    color : #5c9ae1;
+    width : 90%
+}
+
+.mainprod {
+    display : flex;
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
+aside {
+    border-right : solid 6px #73a9ad;
+    flex : 1;
+}
+
+aside div {
+    margin-top : 20px;
+}
+
+#psmain{
+    flex : 4;
+    max-width : 750px;
+    padding-left : 10px;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#psmain div {
+    display : flex;
+    flex-direction: column;
+    flex-wrap : nowrap;
+    margin : 10px;
+    width : 305px;
+    height : 320px;
+    padding : 20px;
+    border : solid 3px #73a9ad;
+}
+
+#psmain div span {
+    width : 100%;
+    text-align: center;
+}
+
+#divimg {
+    width : 280px;
+    height : 280px;
+}
+
+#pmain{
+    display: flex;
+    width : 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#pmain div{
+    flex : 1;
+    padding : 20px;
+}
+
+#pimage {
+    text-align: center;
+    border-right : solid 4px #73a9ad;
+}
+
+#pimage img{
+    width : 90%;
+}
+
+#pinfo {
+    border-right : solid 4px #73a9ad;
+}
+
+#pfeedback {
+    display : flex;
+    flex-direction: column;
+    flex-wrap : nowrap;
+}
+
+#pfeedback span{
+    height : 55px;
+    margin-bottom: 5px;
+}
+
+#pfeedback #pftitle{
+    max-height : 35px;
+    border : solid 3px #73a9ad;
+    padding: 0px;
+    text-align: center;
+    width : 60%
+}
+
+#pfeedback div {
+    max-height : 25px;
+    padding : 1px;
+    border : solid 2px #73a9ad;
+    width : 60%;
+    text-align: center;
+}
+
+#pfeedback p {
+    margin : 2px;
+}
+
+#psmain div a {
+    width : 100%;
+    text-align: center;
+    margin-bottom : 5px;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    animation-timing-function: linear;
+    color : #ffffff;
+}
+
+hr{
+    height : 2.5px;
+    border: 0;
+    background: #73a9ad;
+}
+
+.sub{
+    width : 7em;
+    height : 2em;
+    margin-left : 0.8em;
+    margin-right : 0.8em;
+    text-align : center;
+    color : #5c9ae1;
+    background-color : #c8f3f5;
+    font-size : 0.95em;
+}
+
+.res{
+    width : 7em;
+    height : 2em;
+    margin-left : 0.8em;
+    margin-right : 0.8em;
+    text-align : center;
+    color : #5c9ae1;
+    background-color : #c8f3f5;
+    font-size : 0.95em;
+}
+

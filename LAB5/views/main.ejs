@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <title>Main Page</title>
+    </head>
+    <body>
+        <header>
+            <H1> CornerCandy#</H1>
+            <div class = "linklocation">
+            <div><a href = ""><strong>CANDY</strong></a></div>
+            <div><a href = "login"><strong>로그인</strong></a></div>
+            <div><a href = "signup"><strong>회원가입</strong></a></div>
+            </div>
+        </header>
+        <div class = "mainprod">
+            <aside>
+                <form method = "post" action = "/">
+                    <div>
+                        <label for id = "productCategory">사탕 종류!</label>
+                        <select id = "productCategory" name = "pcg">
+                            <option <%= menu.pcg[0] %>>전체</option>
+                            <option <%= menu.pcg[1] %>>single candy</option>
+                            <option <%= menu.pcg[2] %>>homemade bundle</option>
+                            <option <%= menu.pcg[3] %>>madebundle</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for id = "productSearch" >사탕 찾기!</label>
+                        <input type = "text" name = "psc" id = "productSearch" placeholder = "e.g.Haribo" value = <%= menu.psc %>>
+                    </div>
+                    <div>
+                        <label for id = "productSort" >사탕 정렬!</label>
+                        <select id = "productSort" name = "pst">
+                            <option <%= menu.pst[0] %>>default</option>
+                            <option <%= menu.pst[1] %>>name</option>
+                            <option <%= menu.pst[2] %>>price</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id = "button" type = "submit" >사탕을 찾아보아요!</button>
+                    </div>
+                </form>
+            </aside>
+            <main id = "psmain">
+                <% for(let i = 0; i < prod.length; i++) { %>
+                    <div>
+                        <span><image id = "divimg" src = <%= prod[i].product_image %>></image></span>
+                        <br/>
+                        <a href = <%= "/product/:" + prod[i].product_id %>>자세히 보기</a>
+                    </div>
+                <% } %>
+            </main>
+        </div>
+        <footer>
+            <h1>빨간맛 궁금해 HONEY<br>ConerCandy Shop 찾아봐 BABY</h1>
+        </footer>
+    </body>
+</html>

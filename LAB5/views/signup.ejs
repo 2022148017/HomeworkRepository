@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <title>SIGN UP</title>
+    </head>
+    <body>
+        <header>
+            <H1> CornerCandy# </H1>
+            <div class = "linklocation">
+                <div><a href = "/"><strong>CANDY</strong></a></div>
+                <div><a href = "login"><strong>로그인</strong></a></div>
+                <div><a href = "signup"><strong>회원가입</strong></a></div>  
+            </div>
+        </header>
+
+        <form method = "post" action = "" autocomplete = "on">
+            <p>
+                <label> 이름 : <input name = "name" type = "text" size = "20" autofocus> </label>
+            </p>
+        </form>
+        <form mtehod = "get" action = "" autocomplete = "on">
+            <p> 성별:
+                <label> 남성 <input name = "gender" type = "radio" value = "Male" checked> </label>
+                <label> 여성 <input name = "gender" type = "radio" value = "Female"> </label>
+                <label> OTHER <input name = "gender" type = "radio" value = "Other"> </label>
+            </p>
+            <p>
+                <label> 전화번호 : <input name = "telephone" type = "tel" placeholder = "###-####-####" pattern = "\d{3}-\d{4}-\d{4}" required/></label>
+            </p>
+            <p>
+                <label> 생년월일 : <input name = "birthday" type = "date">(YYYY-MM-DD)</label>
+            </p>
+            <p>
+        </form>
+        <form method = "post" action = "">
+                <label> ID : <input name = "ID" type = "text" size = "20" maxlength = "16" placeholder = "Your ID(max 16)"> </label>
+            </p>
+            <p>
+                <label> PASSWORD : <input name = "PW" type = "text" size = "20" maxlength = "20" placeholder = "Your PW(max 20)"> </label>
+            </p>
+        </form>
+        <form method = "get" action = "" autocomplete = "on">
+            <p> <label> NickName : <input name = "nickname" type = "search" placeholder = "Your NickName(max 20)" maxlength = "20"> </label></p>
+            <p>
+                <label> 이메일 : <input name = "email" type = "email" placeholder = "name@domain.com" required/></label>
+            </p>
+            <p> 가입 경로 :
+                <label> INSTAGRAM <input name = "path" type = "checkbox" value = "Instagram"></label>
+                <label> FACEBOOK <input name = "path" type = "checkbox" value = "Facebook"></label>
+                <label> YOUTUBE <input name = "path" type = "checkbox" value = "Youtube"></label>
+                <label> 기타 <input name = "path" type = "checkbox" value = "ETC"></label>
+            </p>
+            <hr>
+            <p>이 페이지가 만족스러우셨나요?
+                <label><input type = "range" min = "0" max = "10" vlaue = "10" step = "0.5"></label>
+            </p>
+            <p>
+                <label><input class = "sub" type = "submit" value = "Sign Up"/></label>
+                <label><input class = "res" type = "reset" value = "다시"/></label>
+            </p>
+        </form> 
+        <footer>
+            <h1>빨간맛 궁금해 HONEY<br>ConerCandy Shop 찾아봐 BABY</h1>
+        </footer>
+    </body>
+</html>
